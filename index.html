@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Pro - Modern Task Manager</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="header">
+                <h1>✨ My Tasks</h1>
+                <p class="subtitle">Stay organized, stay productive</p>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off">
+                <button id="addBtn">
+                    <span class="btn-text">Add Task</span>
+                    <span class="btn-icon">+</span>
+                </button>
+            </div>
+
+            <div class="stats">
+                <span id="taskCount">0 tasks</span>
+                <button id="clearAll" class="clear-btn">Clear All</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">📝</div>
+                <p>No tasks yet!</p>
+                <p class="empty-subtitle">Add a task to get started</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Fntodo.js"></script>
+</body>
+</html>
